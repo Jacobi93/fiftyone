@@ -36,3 +36,12 @@ pyvenv.cfg
 .env
 
 .playwright-mcp
+
+# quickstart
+quickstart/
+
+# github
+.github/
+
+# models
+__models__/
