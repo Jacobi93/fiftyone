@@ -1,0 +1,143 @@
+{
+  "images": [
+    {
+      "id": 1,
+      "file_name": "test1.jfif",
+      "width": 248,
+      "height": 180
+    },
+    {
+      "id": 2,
+      "file_name": "test2.jfif",
+      "width": 248,
+      "height": 167
+    },
+    {
+      "id": 3,
+      "file_name": "test3.jfif",
+      "width": 250,
+      "height": 165
+    },
+    {
+      "id": 4,
+      "file_name": "test4.jfif",
+      "width": 250,
+      "height": 165
+    },
+    {
+      "id": 5,
+      "file_name": "test5.jfif",
+      "width": 327,
+      "height": 500
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1,
+      "image_id": 1,
+      "category_id": 1,
+      "segmentation": {
+        "size": [
+          180,
+          248
+        ],
+        "counts": "PUk06^51O00000000000000O1000000000000O100000000000000000000000000000010O00000010O00010O0010O0010O0010O01000O0100O10O010O10O100000O010000000O10O10000000000O01001O0001O00O2O01O0001O010O0010O100OgK"
+      },
+      "area": 600,
+      "bbox": [
+        154.0,
+        88.0,
+        94.0,
+        56.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "image_id": 2,
+      "category_id": 1,
+      "segmentation": {
+        "size": [
+          167,
+          248
+        ],
+        "counts": "nVh07n43N1O2O1O010O010O010O01000O01N101O010O1O3N0O010O01O01O0010O01O0010O0001O000001O000001O000001O0000000000000000000000000000001O01O01O00100O010O100O10000O10000O1000000000000O01000000000O01000O10000000OUL"
+      },
+      "area": 920,
+      "bbox": [
+        148.0,
+        78.0,
+        100.0,
+        57.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "image_id": 3,
+      "category_id": 1,
+      "segmentation": {
+        "size": [
+          165,
+          250
+        ],
+        "counts": "Uda06n42O1O1O3M2N2O1OF]K2c4KaK3j40000O0010O01O00010O0000000010O00000000000000000000O100000O100000O10000000O10000000000000010O00000000000001OO1001O000000000O1Nni:"
+      },
+      "area": 493,
+      "bbox": [
+        109.0,
+        67.0,
+        73.0,
+        87.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "image_id": 4,
+      "category_id": 1,
+      "segmentation": {
+        "size": [
+          165,
+          250
+        ],
+        "counts": "bYb04Q51O10000010O02O001O2N1O11N100O100O010O0010O1O01001N103MM3M6Jof01oXO2O0O2O001O00010O01O00100O002O00001O01O0010O0100O1000001O1O1O01001O00001O00010O000001O10O000000N2M3Mil7"
+      },
+      "area": 742,
+      "bbox": [
+        113.0,
+        70.0,
+        87.0,
+        95.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "image_id": 5,
+      "category_id": 1,
+      "segmentation": {
+        "size": [
+          500,
+          327
+        ],
+        "counts": "ldX2P1Z>l0UOo0SO7K5LSNYD5c;@^EN^:Me2M3O1O01N100`MJeE9_:3lD2X;n18I6]MWCS2j=WOZ\\]2"
+      },
+      "area": 1093,
+      "bbox": [
+        148.0,
+        240.0,
+        20.0,
+        228.0
+      ],
+      "iscrowd": 0
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "cable",
+      "supercategory": "object"
+    }
+  ]
+}
