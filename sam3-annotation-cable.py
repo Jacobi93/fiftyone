@@ -2,13 +2,32 @@
 
 import argparse
 import os
+import re
 from pathlib import Path
+
+
+COPILOT_INSTRUCTIONS = Path(__file__).resolve().parent / ".github" / "copilot-instructions.md"
+
+
+def cuda_visible_devices_from_instructions(path):
+    if not path.exists():
+        return None
+
+    match = re.search(
+        r'\bCUDA_VISIBLE_DEVICES\s*=\s*["\']?([^"\'`\s]+)',
+        path.read_text(encoding="utf-8"),
+    )
+    return match.group(1) if match else None
 
 os.environ.setdefault("HF_HUB_OFFLINE", "1")
 os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
-os.environ.setdefault(
-    "CUDA_VISIBLE_DEVICES", "MIG-51c8054a-3ee8-524d-8985-081be630e2e1"
-)
+cuda_visible_devices = cuda_visible_devices_from_instructions(COPILOT_INSTRUCTIONS)
+if cuda_visible_devices:
+    os.environ.setdefault("CUDA_VISIBLE_DEVICES", cuda_visible_devices)
+    
+# os.environ.setdefault(
+#     "CUDA_VISIBLE_DEVICES", "MIG-51c8054a-3ee8-524d-8985-081be630e2e1"
+# )
 
 import numpy as np
 import torch
